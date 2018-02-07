@@ -1,0 +1,33 @@
+\begin{frame}[allowframebreaks]{Roots of $f^n(x)$}
+
+  % TODO show root tree?
+
+  $f(x) = (x-\gamma)^2+\gamma+m$
+
+  \begin{itemize}
+    \item The roots of $f(x)$ are $\gamma\pm\sqrt{-m-\gamma}$
+    \item If $\beta$ is a root of $f^n(x)$, then $\gamma\pm\sqrt{\beta-m-\gamma}$ are roots of $f^{n+1}(x)$
+  \end{itemize}
+
+  \begin{obs}
+    For $n>0$, the roots of $f^n(x)$ are, with $n$ radicals:
+    $$\gamma\pm\sqrt{-m\pm\sqrt{-m\pm\sqrt{-m\pm\ldots\sqrt{-m-\gamma}}}}$$
+  \end{obs}
+
+  \framebreak
+
+  \begin{obs}
+    For $n>0$, the roots of $f^n(x)$ are, with $n$ radicals:
+    $$\gamma\pm\sqrt{-m\pm\sqrt{-m\pm\sqrt{-m\pm\ldots\sqrt{-m-\gamma}}}}$$
+  \end{obs}
+
+  For notational convenience, we define the map $\beta : \Sigma^* \rightarrow \CC$ where
+  \begin{align*}
+    \beta_{\epsilon} &= -\gamma \\
+    \beta_{0s} &= \sqrt{-m+\beta_s} \\ 
+    \beta_{1s} &= -\sqrt{-m+\beta_s}
+  \end{align*}
+
+  For $n>0$, the roots of $f^n(x)$ are exactly $\{\;\gamma+\beta_s\mid s\in\Sigma^n\;\}$.
+
+\end{frame}

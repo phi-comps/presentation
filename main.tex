@@ -1,0 +1,56 @@
+\documentclass{beamer}
+
+\mode<presentation>
+
+\usetheme{Frankfurt}
+
+\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{frametitle continuation}[from second][(contd.)]
+\setbeamertemplate{frametitle continuation}[from second][]
+
+\title{Some Title}
+\subtitle{And Maybe a Subtitle}
+\author[Illig \and Orvis \and Segawa \and Spinale]{Peter Illig \and Eli Orvis \and Yukihiko Segawa \and Nick Spinale}
+\institute[Carleton]{Carleton College}
+\date{February 20\textsuperscript{th}, 2018}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsthm,amssymb,amsmath}
+\usepackage{graphicx}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\g}{\gamma}
+\newcommand{\xg}{x-\gamma}
+\newcommand{\pxg}{(x-\gamma)}
+
+\begin{document}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{remk}[thm]{Remark}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{Contents}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\input{intro}
+
+\section{Simplifying the Problem}
+
+\input{simpl}
+
+\end{document}
