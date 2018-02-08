@@ -1,0 +1,120 @@
+\begin{frame}[allowframebreaks]{Newly Reducible Third Iterates Part 1}
+
+
+Let
+
+  \begin{itemize}
+    \item $p_1(x) = a + b (\xg) + c (\xg)^{2} + d(\xg)^{3} + (\xg)^{4}$
+    \item $p_2(x) = a - b (\xg) + c (\xg)^{2} - d (\xg)^{3} + (\xg)^{4}$
+  \end{itemize}
+
+If $f^3 = p_1(p_2)$, then
+
+\begin{align*}
+\gamma + m^{4} + 2 m^{3} + m^{2} + m &= a^2 \\
+4 m^{3} + 4 m^{2} &= 2ac - b^2 \\
+6 m^{2} + 2 m &= 2a - 2bd + c^2 \\
+4 m &= 2c - d^{2}
+\end{align*}
+
+\framebreak
+
+Every newly reducible third iterate is a rational point on this surface!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplifying the System}
+
+We can simplify this system of equations using linear substitutions and the quadratic formula to get
+
+\begin{align*}
+\gamma= & \pm\beta \left(- \frac{3 d^{6}}{16} - \frac{d^{4} m}{2} - \frac{d^{2} m^{2}}{2} - \frac{d^{2} m}{2}\right) \\
+& + \frac{17 d^{8}}{64} + \frac{5 m}{4} d^{6} + \frac{11 d^{4}}{4} m^{2} + \frac{7 m}{4} d^{4} + 2 d^{2} m^{3} + 2 d^{2} m^{2} - m
+\end{align*}
+
+\pause
+
+Note that every expression in this formula is a rational function of $d$, $m$, and $\beta$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{All about $\beta$}
+
+Let's look at $\beta$
+
+\begin{equation*}
+\beta = \sqrt{2 d^{4} + 8 d^{2} m + 16 m^{2} + 16 m}
+\end{equation*}
+
+\pause 
+
+Letting $\beta = y$ and $d = s$ we have the surface
+
+\begin{equation*}
+S:\ y^2 = 2 s^4 + 8 m s^2 + 16 m^2 + 16 m
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The Curves $C_m$}
+
+We want to explore the surface $S$, by considering the curve $C_m$ that results from a fixed value of $m$.
+
+\pause
+
+\begin{equation*}
+C_{m_0}:\ y^2 = 2 s^4 + 8 s^2 (m_0) + 16 (m_0)^2 + 16 m_0
+\end{equation*}
+
+\pause
+
+Some questions to consider:
+
+\begin{itemize}
+\item What are the roots of $C_m$?
+\pause
+\item What is the genus of $C_m$?
+\pause
+\item Does $C_m$ have rational points?  If so, how many?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The roots of $C_m$}
+
+What do the roots of $C_m$ tell us?
+
+\pause
+
+If $C_m$ has repeated roots, it's a conic!  Otherwise, it's an elliptic curve.
+
+\pause
+
+So when does $C_m$ have repeated roots?
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The roots of $C_m$}
+
+\begin{align*}
+C_{m_0}:\ y^2 & = 2 s^4 + 8 s^2 (m_0) + 16 (m_0)^2 + 16 m_0 \\
+\pause
+& = 2(s^2)^2 + 8 s^2 (m_0) + 16 (m_0)^2 + 16 m_0
+\end{align*}
+
+\pause
+
+Using the quadratic formula we get that $C_m$ has a repeated root if and only $\sqrt{-2m-m^2} = 0$ or $2(-m\pm\sqrt{-2m-m^2}) = 0$.  This happens when $m \in \{0, -1, -2\}$.
+
+
+
+\end{frame}
+
+\end
+
+\end{frame}
