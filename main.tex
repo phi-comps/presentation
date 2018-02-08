@@ -19,6 +19,15 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsthm,amssymb,amsmath}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[normalem]{ulem}
+
+\newcommand{\hcancel}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+    }%
+}%
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -53,6 +62,10 @@
 
 \input{simpl}
 
+
+\section{Newly Reducible Third Iterates, Part 2}
+
+\input{nrti2}
 
 \end{document}
 
