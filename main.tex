@@ -22,12 +22,14 @@
 \usepackage{tikz}
 \usepackage[normalem]{ulem}
 
-\newcommand{\hcancel}[1]{%
+\newcommand{\hcancel}[1]{ % red strikethrough
     \tikz[baseline=(tocancel.base)]{
         \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
-        \draw[red] (tocancel.south west) -- (tocancel.north east);
-    }%
-}%
+        \draw[red] (tocancel.south west) -- (tocancel.north east);}}
+\newcommand{\hunder}[1]{ % red underline
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.south east);}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
